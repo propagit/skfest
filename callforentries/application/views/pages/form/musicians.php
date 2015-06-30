@@ -14,7 +14,7 @@
 					
 					function validate_form()
 					{
-						return true;
+						//return true;
 						var bandname = $('#bandname').val();
 						var musictype = $('#musictype').val();
 						var contactname = $('#contactname').val();

@@ -85,7 +85,7 @@ class Page extends CI_Controller
 			if($_FILES['mp3']['name']){
 				$file_data = array(
 					'dir' => './uploads/mp3/',
-					'allowed_types' => 'mp3|MP3|pdf',
+					'allowed_types' => 'mp3|MP3',
 					'max_size' => 5120,
 					'field_name' => 'mp3'
 				);
