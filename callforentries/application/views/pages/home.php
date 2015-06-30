@@ -18,18 +18,19 @@
                     <img src="<?=base_url()?>/photos/news_sticker/<?= $all[0]['image']?>" alt=""/>
                 </noscript>
             </div>
-            <div class="items">
-                <ul>
+
+            <div class="items" >
+               <ul>
                 <?php foreach($all as $alls)
                 {
                     ?>
                     <li>
-                      <div class="button">
-                            <p>
-                            	<span style="font-size:13px"><?= $alls['heading']?></span>
+                     <div class="button">
+                         <p style="margin-top: 5px !important;">
+                            	<span style="clear:both;font-family:'karla';font-size:18px;font-weight:normal;color:#00e9c9;"><?= $alls['heading']?></span>
                                 <br />                                
-								<span class="button_subheading"><?= $alls['subheading']?></span>
-                            </p>
+                                <span class="button_subheading" style="clear:both;font-family:'karla';font-size:18px;font-weight:normal;color:#FFF; margin-top:5px;"><?= $alls['subheading']?></span>
+                            </p> 
                         </div>
 
                         <a href="<?=base_url()?>/photos/news_sticker/<?= $alls['image']?>"></a>
@@ -45,7 +46,7 @@
                  }
                  ?>
                 </ul>
-             </div>
+             </div> 
      </div>
      </div>
      
