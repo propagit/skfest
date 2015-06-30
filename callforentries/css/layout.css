@@ -509,3 +509,15 @@ ul#navmenu-h li:hover ul, ul#navmenu-h ul li:hover ul, ul#navmenu-h ul ul li:hov
 	line-height:14px;
 	margin-right:18px;
 }
+
+.sliding-image-gallery .items ul{
+    display: none !important;
+}
+.sliding-image-gallery .main-img{
+    width: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+.sliding-image-gallery .textbox{
+    width: 100% !important;
+}

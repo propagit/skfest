@@ -10,8 +10,8 @@
      
      <div style="float:left;margin-top:15px;">
      <?php #require_once($_SERVER['DOCUMENT_ROOT'].'/callforentries/flashcomponent_jquery/index.php');?>
-     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/skfest/callforentries/flashcomponent_jquery/index.php');?>
-     <div class="banner" style="height:376px!important; z-index:1; margin-left:20px">
+     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/propagate/skfest/callforentries/flashcomponent_jquery/index.php');?>
+     <div class="banner" style="height:376px!important; z-index:1; margin-left:20px;">
             <div class="screen" style="height:376px;">
                 <noscript>
                     <!--Placeholder Image When Javascript is Off-->
@@ -19,17 +19,17 @@
                 </noscript>
             </div>
             <div class="items" >
-                <ul>
+               <ul>
                 <?php foreach($all as $alls)
                 {
                     ?>
                     <li>
-                      <div class="button">
-                            <p>
-                            	<span style="font-size:13px"><?= $alls['heading']?></span>
+                     <div class="button">
+                         <p style="margin-top: 5px !important;">
+                            	<span style="clear:both;font-family:'karla';font-size:18px;font-weight:normal;color:#00e9c9;"><?= $alls['heading']?></span>
                                 <br />                                
-								<span class="button_subheading"><?= $alls['subheading']?></span>
-                            </p>
+                                <span class="button_subheading" style="clear:both;font-family:'karla';font-size:18px;font-weight:normal;color:#FFF; margin-top:5px;"><?= $alls['subheading']?></span>
+                            </p> 
                         </div>
 
                         <a href="<?=base_url()?>/photos/news_sticker/<?= $alls['image']?>"></a>
@@ -45,7 +45,7 @@
                  }
                  ?>
                 </ul>
-             </div>
+             </div> 
      </div>
      </div>
      
