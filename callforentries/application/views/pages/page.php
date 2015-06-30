@@ -1,3 +1,11 @@
+<script src="<?=base_url()?>js/jquery.lightbox-0.5.js" type="text/javascript" /></script>
+
+<link href="<?=base_url()?>css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+$(document).ready(function(){
+$("#gallery a").lightBox();
+});
+</script>
 <?php
 if(isset($page))
 {
@@ -20,7 +28,6 @@ if(isset($page))
             	<div id="text_content">
                 	<?php if(isset($page['content'])) { echo $page['content'];} else { echo 'Page Not Found';}?>
                 </div>
-                
             </div>
 	        <div style="clear:both;"></div>
         </div>
@@ -34,3 +41,25 @@ if(isset($page))
   }
 }
 ?>
+
+
+
+<?php if(count($images) > 0){ ?>        
+<div id="gallery" class="gallery"> <!-- #gallery -->
+	<?php
+    $dir = $path;
+	$count = 1;
+	#for($i = 0; $i < 11;$i++){
+    foreach($images as $photo){
+    ?>
+    	<a <?=($count % 6 == 0) ? 'class="x-rt-padding"' : ''?> href="<?=$dir . $photo['name'];?>"><img src="<?=$dir . '/thumbnails/' . $photo['name'];?>" ></a>
+    <?php
+		$count++;
+    }
+	#}
+    ?>
+</div>
+<?php } ?>
+         
+
+         

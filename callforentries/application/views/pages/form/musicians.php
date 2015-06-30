@@ -14,7 +14,7 @@
 					
 					function validate_form()
 					{
-						//return true;
+						return true;
 						var bandname = $('#bandname').val();
 						var musictype = $('#musictype').val();
 						var contactname = $('#contactname').val();
@@ -183,7 +183,10 @@
                         
                         <div class="gap"></div>
                         <div>
-                        	<div class="form_label" style="float:left">UPload MP3 (Max Size 5MB)</div>
+                        	<div class="form_label" style="float:left">
+                            UPload MP3 (Max Size 5MB)<br>
+                            Allowed File Type (mp3)
+                            </div>
                             <div style="float:left"><input type="file" class="textfield" name="mp3" id="mp3" style="width:200px" /></div>
                         </div>
                         

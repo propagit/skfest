@@ -29,6 +29,11 @@ class User_model extends CI_Model {
 		return $this->db->insert_id();
 	}
 	
+	function update_design_competition($id,$data){
+		$this->db->where('id', $id);
+		$this->db->update('design_competition', $data); 
+	}
+	
 	function add_expression_of_interest($data)
 	{
 		$this->db->insert('expression_of_interest',$data);

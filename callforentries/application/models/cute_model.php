@@ -129,7 +129,8 @@ class Cute_model extends CI_Model
   private $l_strings;
   private $D_strings;
  
-  public $FilesPath = "/callforentries/js/cute";
+ # public $FilesPath = "/callforentries/js/cute";
+  public $FilesPath = "/skfest/callforentries/js/cute";
 	
  function __construct() {
 		parent::__construct();

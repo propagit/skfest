@@ -509,3 +509,23 @@ ul#navmenu-h li:hover ul, ul#navmenu-h ul li:hover ul, ul#navmenu-h ul ul li:hov
 	line-height:14px;
 	margin-right:18px;
 }
+
+.gallery{
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;	
+}
+.gallery a{
+	float:left;
+	padding-right:18px;
+	padding-bottom:18px;
+}
+.gallery a img{
+	min-width:141px;	
+	box-shadow:2px 2px 5px #ccc;
+}
+.x-rt-padding{
+	padding-right:0 !important;	
+}

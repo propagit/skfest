@@ -5,6 +5,9 @@
 # controllers
 	- page.php
 	- admin/csv/musicians_to_csv	
+	- admin/cms/create_gallery - upload path
+		- cms/add_photo
+		and many other functions with upload function
 	
 	
 # views
@@ -15,11 +18,12 @@
 		- added _add_file function
 	- common/footer
 		- added contact details
+	- pages/page - gallery
 	
 	
 # other files
 	- flashcomponent_jquery/index.php	
-	
+	- config/mimes.php
 	
 	
 # css
@@ -28,4 +32,5 @@
 	
 	
 # sqls
-ALTER TABLE `musicians_entry` ADD `mp3` TEXT NOT NULL COMMENT 'mp3 track ' ;	
+ALTER TABLE `musicians_entry` ADD `file` TEXT NOT NULL COMMENT 'mp3 track ' ;	
+ALTER TABLE `design_competition` ADD `file` TEXT NOT NULL ;

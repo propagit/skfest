@@ -11,14 +11,14 @@
      <div style="float:left;margin-top:15px;">
      <?php #require_once($_SERVER['DOCUMENT_ROOT'].'/callforentries/flashcomponent_jquery/index.php');?>
      <?php require_once($_SERVER['DOCUMENT_ROOT'].'/skfest/callforentries/flashcomponent_jquery/index.php');?>
-     <div class="banner" style="height:376px!important; z-index:1; margin-left:20px">
+     <div class="banner" style="height:376px!important; z-index:1; margin-left:20px;width:100%;">
             <div class="screen" style="height:376px;">
                 <noscript>
                     <!--Placeholder Image When Javascript is Off-->
                     <img src="<?=base_url()?>/photos/news_sticker/<?= $all[0]['image']?>" alt=""/>
                 </noscript>
             </div>
-            <div class="items" >
+            <div class="items">
                 <ul>
                 <?php foreach($all as $alls)
                 {
