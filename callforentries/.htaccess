@@ -1,0 +1,9 @@
+RewriteEngine on
+
+#RewriteCond %{HTTP_HOST} ^www.stkildafestival.com.au/callforentires/login [NC]
+#RewriteRule ^(.*)$ http://stkildafestival.com.au/callforentires/login/$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+

@@ -1,0 +1,31 @@
+# images
+	- images/instagram-icon.jpg
+	
+	
+# controllers
+	- page.php
+	- admin/csv/musicians_to_csv	
+	
+	
+# views
+	- pages/home - uncomment flash component jquery
+	- common/header - instagram icon	
+	- pages/form/musicians.php
+		- add_musicians_entry
+		- added _add_file function
+	- common/footer
+		- added contact details
+	
+	
+# other files
+	- flashcomponent_jquery/index.php	
+	
+	
+	
+# css
+	- layout.css	
+	
+	
+	
+# sqls
+ALTER TABLE `musicians_entry` ADD `mp3` TEXT NOT NULL COMMENT 'mp3 track ' ;	

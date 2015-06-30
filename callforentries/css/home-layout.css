@@ -1,0 +1,128 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+html, body, #bg, #bg table, #bg td, #cont, #beingbg,#contactbg,#newsbg  {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+body
+{
+	font-family:Helvetica Neue, Helvetica , Arial, sans-serif;
+	font-size:12px;
+	color:#999;
+}
+#cont {
+    left: 0;
+    margin: 0 auto;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+}
+#bg2 {
+   /* position: fixed;*/
+	/* Theoretically for IE 8 & 9 (more valid) */
+        /* ...but not required as filter works too */
+        /* should come BEFORE filter */
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+
+        /* This works in IE 8 & 9 too */
+        /* ... but also 5, 6, 7 */
+        filter: alpha(opacity=10);
+
+        /* Older than Firefox 0.9 */
+        -moz-opacity:0.1;
+
+        /* Safari 1.x (pre WebKit!) */
+        -khtml-opacity: 0.1;
+
+        /* Modern!
+        /* Firefox 0.9+, Safari 2?, Chrome any?
+        /* Opera 9+, IE 9+ */
+        opacity: 0.1;
+}
+
+#bg2 td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#bg2 div#divbg {
+    height: 200%;
+    left: -50%;
+    position: absolute;
+    top: -50%;
+    width: 200%;
+}
+
+
+#bg2 img {
+    margin: 0 auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#beingbg img {
+    margin: 0 auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+#beingbg div#divbg {
+    height: 200%;
+    left: -50%;
+    position: absolute;
+    top: -50%;
+    width: 200%;
+}
+
+#newsbg img {
+    margin: 0 auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+#newsbg div#divbg {
+    height: 200%;
+    left: -50%;
+    position: absolute;
+    top: -50%;
+    width: 200%;
+}
+
+#contactbg img {
+    margin: 0 auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+#contactbg div#divbg {
+    height: 200%;
+    left: -50%;
+    position: absolute;
+    top: -50%;
+    width: 200%;
+}
+
+a img
+{
+	border:0 none;
+}
+a 
+{
+	color:#999;
+	text-decoration:none;
+}
+#page_wrapper
+{
+	/*margin:0 auto;*/
+	width:970px;
+	padding-left:47px;
+	padding-right:10px;
+	padding-top:47px;
+}
+#center_logo
+{
+	width:368px;
+	height:404px;
+}
