@@ -8,7 +8,7 @@
 	- admin/cms/create_gallery - upload path
 		- cms/add_photo
 		and many other functions with upload function
-	
+	- admin/news_sticker - banner size
 	
 # views
 	- pages/home - uncomment flash component jquery
@@ -19,6 +19,9 @@
 	- common/footer
 		- added contact details
 	- pages/page - gallery
+	- admin/news_sticker
+		- add - file size text
+		- edit
 	
 	
 # other files
