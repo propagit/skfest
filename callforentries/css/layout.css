@@ -312,7 +312,7 @@ ul#navmenu-h li:hover ul, ul#navmenu-h ul li:hover ul, ul#navmenu-h ul ul li:hov
 {
 	float:left;
 	/*width:180px;*/
-	width:135px;
+	width:200px;
 }
 #goverment_sponsor
 {
@@ -498,7 +498,7 @@ ul#navmenu-h li:hover ul, ul#navmenu-h ul li:hover ul, ul#navmenu-h ul ul li:hov
 }
 .contact-info{
 	float:left;
-	width:560px;	
+	width:735px;	
 }
 .contact-info ul{
 	list-style:none;
@@ -507,7 +507,7 @@ ul#navmenu-h li:hover ul, ul#navmenu-h ul li:hover ul, ul#navmenu-h ul ul li:hov
 .contact-info ul li{
 	float:left;	
 	line-height:14px;
-	margin-right:18px;
+	margin-right:75px;
 }
 
 

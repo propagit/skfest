@@ -48,10 +48,14 @@ $(document).ready(function() {
             </li>
         </ul>
     </div>
-    <div id="advertisment">
+    <?php if(0){ 
+		# reason for keeping this as a comment is they might want it back again later on
+	?>
+    <!--<div id="advertisment">
         <div><a href="http://www.stkildafilmfestival.com.au/callforentries/" target="_blank"><img src="<?=base_url()?>images/FooterAd-240x140-FILMFESTIVAL.jpg" /></a></div>
         <div><a href="http://www.portphillip.vic.gov.au/no_cuts_no_butts.htm" target="_blank"><img src="<?=base_url()?>images/FooterAd-240x140-NOCUTSNOBUTTS.jpg" /></a></div>
-    </div>
+    </div>-->
+    <?php } ?>
  </div>
 </div> 	
 </div> 
