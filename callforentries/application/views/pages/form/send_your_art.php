@@ -29,6 +29,7 @@
 						var surname = $('#surname').val();
 						var email = $('#email').val();
 						var agree = $('#agree').attr('checked');
+						var file = $('#poster').val();
 						var valid = true;
 						if(firstname == '') 
 						{
@@ -42,24 +43,30 @@
 						{
 							valid = false;
 						}
+						if(!file){
+							valid = false;
+						}
 						/*if(validateEmail(email))
 						{
 							valid = false;
 						}*/
 						if(agree != 'checked') {valid = false;}
 						
+						if(!valid){
+							alert('Please fill up all the mandatory fields');	
+						}
 						return valid;
 					}
 				</script>
                 <form action="<?=base_url()?>page/add_send_your_art" enctype="multipart/form-data" method="post" onsubmit="return validate_form();">
                     <div id="form_content">
                     	<div>
-                        	<div class="form_label" style="float:left">First Name</div>
+                        	<div class="form_label" style="float:left">First Name *</div>
                             <div style="float:left"><input class="form_input" type="text" value="" id="firstname" name="firstname"></div>
                         </div>
                         <div class="gap"></div>
                         <div>
-                        	<div class="form_label" style="float:left">Surname</div>
+                        	<div class="form_label" style="float:left">Surname *</div>
                             <div style="float:left"><input class="form_input" type="text" value="" id="surname" name="surname"></div>
                         </div>
                         <div class="gap"></div>
@@ -69,13 +76,13 @@
                         </div>
                         <div class="gap"></div>
                         <div>
-                        	<div class="form_label" style="float:left">Email</div>
+                        	<div class="form_label" style="float:left">Email *</div>
                             <div style="float:left"><input class="form_input" type="text" value="" id="email" name="email"></div>
                         </div>
                         <div class="gap"></div>
                         <div>
                         	<div class="form_label" style="float:left">
-                            Upload Poster (Max Size 5MB)<br>
+                            Upload Poster (Max Size 5MB) *<br>
                             Allowed File Types: <br>
                            jpg, jpeg, png, gif 
                             </div>

@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
 .heading_content_page
 {
-	font-family: 'karla';font-size: 21px; font-weight:bold; color:#00e9c9;
+	font-family: 'karla';font-size: 21px; font-weight:bold; color:#0077c0;
 }
 .subheading_content_page
 {
@@ -39,7 +39,7 @@
 }
 #event_button:hover
 {
-	background:#00e9c9;
+	background:#0077c0;
 	cursor:pointer;
 }
 #musicians_button
@@ -55,7 +55,7 @@
 }
 #musicians_button:hover
 {
-	background:#00e9c9;
+	background:#0077c0;
 	cursor:pointer;
 }
 #kids_button
@@ -70,6 +70,6 @@
 }
 #kids_button:hover
 {
-	background:#00e9c9;
+	background:#0077c0;
 	cursor:pointer;
 }

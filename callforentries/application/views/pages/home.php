@@ -9,8 +9,8 @@
    		<div id="left-container">
      
      <div style="float:left;margin-top:15px;">
-     <?php #require_once($_SERVER['DOCUMENT_ROOT'].'/callforentries/flashcomponent_jquery/index.php');?>
-     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/skfest/callforentries/flashcomponent_jquery/index.php');?>
+     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/callforentries/flashcomponent_jquery/index.php');?>
+     <?php #require_once($_SERVER['DOCUMENT_ROOT'].'/skfest/callforentries/flashcomponent_jquery/index.php');?>
      <div class="banner" style="height:376px!important; z-index:1; margin-left:20px;width:100%;">
             <div class="screen" style="height:376px;">
                 <noscript>
@@ -27,7 +27,7 @@
                     <li>
                      <div class="button">
                          <p style="margin-top: 5px !important;">
-                            	<span style="clear:both;font-family:'karla';font-size:18px;font-weight:normal;color:#00e9c9;"><?= $alls['heading']?></span>
+                            	<span style="clear:both;font-family:'karla';font-size:18px;font-weight:normal;" class="prim-color"><?= $alls['heading']?></span>
                                 <br />                                
                                 <span class="button_subheading" style="clear:both;font-family:'karla';font-size:18px;font-weight:normal;color:#FFF; margin-top:5px;"><?= $alls['subheading']?></span>
                             </p> 

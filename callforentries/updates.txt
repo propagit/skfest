@@ -1,37 +1,28 @@
 # images
-	- images/instagram-icon.jpg
+	
 	
 	
 # controllers
-	- page.php
-	- admin/csv/musicians_to_csv	
-	- admin/cms/create_gallery - upload path
-		- cms/add_photo
-		and many other functions with upload function
-	- admin/news_sticker - banner size
+	
 	
 # views
-	- pages/home - uncomment flash component jquery
-	- common/header - instagram icon	
-	- pages/form/musicians.php
-		- add_musicians_entry
-		- added _add_file function
-	- common/footer
-		- added contact details
-	- pages/page - gallery
-	- admin/news_sticker
-		- add - file size text
-		- edit
+	- form
+		- musicians
+		- send_your_art
+	- page
+		- home
+	- common
+		- header
+		- footer
 	
 	
 # other files
-	- flashcomponent_jquery/index.php	
-	- config/mimes.php
+	
 	
 	
 # css
 	- layout.css	
-	
+	- template.css
 	
 	
 # sqls

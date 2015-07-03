@@ -29,22 +29,23 @@ $(document).ready(function() {
                 City of Port Phillip ASSIST<br>
                 T: (03) 9209 6777<br>
             </li>
-            <li>
-                <strong>SPONSORSHIP ENQUIRIES</strong><br>
-                Meagan Scott<br>
-                E: <a href="mailto:mscott@portphillip.vic.gov.au">mscott@portphillip.vic.gov.au</a><br>
-                T: 0403 844 266 <br><br>
-                
-                Brad Elliott<br>
-                E: <a href="mailto:belliott@portphillip.vic.gov.au">belliott@portphillip.vic.gov.au</a><br>
-                T: 0478 487 719	<br>
-            </li>
+            
             <li>
                 <strong>MEDIA ENQUIRIES</strong><br>
                 Wrights PR<br>
                 T: (03) 9690 9911<br>
                 E: <a href="mailto:sfarnum@wrights.com.au">sfarnum@wrights.com.au</a><br>
                 W: wrights.com.au<br>
+            </li>
+            <li>
+                <strong>SPONSORSHIP ENQUIRIES</strong><br>
+                Meagan Scott<br>
+                E: <a href="mailto:mscott@portphillip.vic.gov.au">mscott@portphillip.vic.gov.au</a><br>
+                T: 0403 844 266 <br><br>
+                <?php if(0){ ?>
+                Brad Elliott<br>
+                E: <a href="mailto:belliott@portphillip.vic.gov.au">belliott@portphillip.vic.gov.au</a><br>
+                T: 0478 487 719	<br><?php } ?>
             </li>
         </ul>
     </div>

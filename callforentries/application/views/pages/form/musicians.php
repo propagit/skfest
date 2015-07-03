@@ -25,6 +25,8 @@
 						var track1 = $('#track1').val();
 						var track2 = $('#track2').val();
 						
+						var file = $('#mp3').val();
+						
 						var mailing_address = $('#mailing_address').val();
 						var band_details = $('#band_details').val();
 						var work_address = $('#work_address').val();
@@ -74,6 +76,9 @@
 						if(re_email == '') 
 						{
 							valid = false;
+						}
+						if(!file){
+							valid = false;	
 						}
 						
 						if(email != re_email)
@@ -184,7 +189,7 @@
                         <div class="gap"></div>
                         <div>
                         	<div class="form_label" style="float:left">
-                            UPload MP3 (Max Size 5MB)<br>
+                            UPload MP3 (Max Size 5MB) *<br>
                             Allowed File Type (mp3)
                             </div>
                             <div style="float:left"><input type="file" class="textfield" name="mp3" id="mp3" style="width:200px" /></div>
