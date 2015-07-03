@@ -9,8 +9,8 @@
    		<div id="left-container">
      
      <div style="float:left;margin-top:15px;">
-     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/callforentries/flashcomponent_jquery/index.php');?>
-     <?php #require_once($_SERVER['DOCUMENT_ROOT'].'/skfest/callforentries/flashcomponent_jquery/index.php');?>
+     <?php #require_once($_SERVER['DOCUMENT_ROOT'].'/callforentries/flashcomponent_jquery/index.php');?>
+     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/skfest/callforentries/flashcomponent_jquery/index.php');?>
      <div class="banner" style="height:376px!important; z-index:1; margin-left:20px;width:100%;">
             <div class="screen" style="height:376px;">
                 <noscript>
@@ -26,21 +26,23 @@
                     ?>
                     <li>
                      <div class="button">
-                         <p style="margin-top: 5px !important;">
-                            	<span style="clear:both;font-family:'karla';font-size:18px;font-weight:normal;" class="prim-color"><?= $alls['heading']?></span>
-                                <br />                                
-                                <span class="button_subheading" style="clear:both;font-family:'karla';font-size:18px;font-weight:normal;color:#FFF; margin-top:5px;"><?= $alls['subheading']?></span>
-                            </p> 
+                         
+                          <span style="clear:both;font-family:'karla';font-size:18px;font-weight:normal; margin-top:5px;" class="prim-color"><?= $alls['heading']?></span>
+                          <br />                                
+                          <span class="button_subheading" style="clear:both;font-family:'karla';font-size:18px;font-weight:normal;color:#FFF; margin-top:5px;"><?= $alls['subheading']?></span>
+                           
                         </div>
 
                         <a href="<?=base_url()?>/photos/news_sticker/<?= $alls['image']?>"></a>
  	                                            <a href="<?= $alls['url']?>"></a>
-                        <div class="content" style="top:291px; left:0px; width:700px; height:85px;">
-                            <h1 class="poplarStd" style="text-transform:normal;"><?= $alls['heading']?></h1>
-                            <h2 class="subheading" style="text-transform:normal;"><?= $alls['subheading']?></h2>
-                           <!-- <div style="margin-top:10px;text-transform:none!important;" class="DidactGothic"><?= $alls['description']?></div>-->
-                        </div>                   
-                       
+                        
+						<?php if(0){ ?>
+                           <!-- <div class="content" style="top:291px; left:0px; width:700px; height:85px;">
+                                <h1 class="poplarStd" style="text-transform:normal;"><?= $alls['heading']?></h1>
+                                <h2 class="subheading" style="text-transform:normal;"><?= $alls['subheading']?></h2>
+                              <div style="margin-top:10px;text-transform:none!important;" class="DidactGothic"><?= $alls['description']?></div>
+                            </div> -->                  
+                       	<?php } ?>
                     </li>
                  <?
                  }

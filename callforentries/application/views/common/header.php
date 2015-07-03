@@ -150,7 +150,7 @@ $(function(){
                     	000 <span>D&nbsp;</span> 00 <span>H&nbsp;</span> 00 <span>M&nbsp;</span> 00 <span>S</span>
                     </div>
                     <div style="height: 8px">&nbsp;</div>
-                    <div style="height: 36px; background: #f0f0eb; color: #000000; font-size: 12px; font-weight: 600; line-height: 36px; text-align: center;">UNTIL THE ST KILDA FESTIVAL STARTS</div>
+                    <div style="height: 36px; color: #000000; font-size: 12px; font-weight: 600; line-height: 36px; text-align: center;" class="body-bg">UNTIL THE ST KILDA FESTIVAL STARTS</div>
 					
                     
                         <!-- <script type="text/javascript">

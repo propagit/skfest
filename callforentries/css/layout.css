@@ -13,6 +13,10 @@ body
 	background-color:#dde4f1 !important; /* fallback*/
 	background-color:rgba(0,86,150,0.1) !important;
 }
+.body-bg{
+	background-color:#dde4f1; /* fallback*/
+	background-color:rgba(0,86,150,0.1);
+}
 a img
 {
 	border:0 none;
