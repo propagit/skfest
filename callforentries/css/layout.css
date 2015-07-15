@@ -106,7 +106,7 @@ ul#navmenu-h ul ul, ul#navmenu-h ul ul ul {
     top: -3px;
     z-index: 13;
 }
-ul#navmenu-h li#menu1
+/*ul#navmenu-h li#menu1
 {
 	padding-right: 0px;
 	width:134px;
@@ -141,7 +141,7 @@ ul#navmenu-h li#menu6
 	padding-right: 0px;
 	width:100px;
 	text-align:right;
-}
+}*/
 ul#navmenu-h li {
     display: inline;
     float: left;
@@ -153,12 +153,14 @@ ul#navmenu-h li {
 	font-size:13px;
 }
 
+
 ul#navmenu-h ul li {
     background:url(../images/menu_item_bg.png);
     display: block;
     height: 23px;
     width: 180px;
 	color:#646464;
+	letter-spacing:0;
 	
 }
 ul#navmenu-h ul li:hover {
@@ -172,6 +174,8 @@ ul#navmenu-h ul li:hover a{
 ul#navmenu-h ul li a
 {
 	color:#646464;
+	letter-spacing:1px;
+	font-weight:bold;
 }
 ul#navmenu-h ul li.last {
     margin: 0;
@@ -185,6 +189,7 @@ ul#navmenu-h a {
     text-decoration: none;
     z-index: 12;
 	color:#646464;
+	font-weight:bold;
 }
 ul#navmenu-h li:hover, ul#navmenu-h li.iehover {
    
@@ -214,7 +219,28 @@ ul#navmenu-h li:hover ul ul, ul#navmenu-h li:hover ul ul ul, ul#navmenu-h li.ieh
 ul#navmenu-h li:hover ul, ul#navmenu-h ul li:hover ul, ul#navmenu-h ul ul li:hover ul, ul#navmenu-h li.iehover ul, ul#navmenu-h ul li.iehover ul, ul#navmenu-h ul ul li.iehover ul {
     display: block;
 }
+/* normal browser */
+ul#navmenu-h > li{
+	padding-right:120px;	
+}
+ul#navmenu-h > li:last-child{
+	padding-right:0;	
+}
 
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Chrome */
+    ul#navmenu-h > li{
+		padding-right:126px;	
+	}
+}
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { @media
+{
+    /* safari */
+	ul#navmenu-h > li{ 
+		padding-right:111px;	
+
+    }
+}}
 #header_subscribe
 {
 	/*background: none repeat scroll 0 0 #747474;*/
@@ -540,7 +566,7 @@ ul#navmenu-h li:hover ul, ul#navmenu-h ul li:hover ul, ul#navmenu-h ul ul li:hov
 }
 .gallery a{
 	float:left;
-	padding-right:18px;
+	padding-right:18.8px;
 	padding-bottom:18px;
 }
 .gallery a img{

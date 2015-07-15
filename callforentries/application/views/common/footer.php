@@ -35,7 +35,7 @@ $(document).ready(function() {
                 Wrights PR<br>
                 T: (03) 9690 9911<br>
                 E: <a href="mailto:sfarnum@wrights.com.au">sfarnum@wrights.com.au</a><br>
-                W: wrights.com.au<br>
+                W: <a target="_blank" href="http://wrights.com.au">wrights.com.au</a><br>
             </li>
             <li>
                 <strong>SPONSORSHIP ENQUIRIES</strong><br>
