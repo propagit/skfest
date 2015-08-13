@@ -362,7 +362,7 @@ class Csv extends CI_Controller {
 			header('Pragma: no-cache');
 		}
 		  
-		$header = "id,Firstname,Surname,Phone,Email,Live/Work/Study in City of Port Philip,Details\r\n";  
+		$header = "id,Firstname,Surname,Phone,Email,File,File Link,Live/Work/Study in City of Port Philip,Details\r\n";  
 		$csv_output = '';
 
 		if($foods)
@@ -374,6 +374,16 @@ class Csv extends CI_Controller {
 				$csv_output .= str_replace(array("\r", "\r\n", "\n", ","), "-",$food['lastname']).',';
 				$csv_output .= str_replace(array("\r", "\r\n", "\n", ","), "-",$food['phone']).',';
 				$csv_output .= str_replace(array("\r", "\r\n", "\n", ","), "-",$food['email']).',';
+				
+				# file
+				if($food['file']){
+					$file_info = '';
+					$file_info = json_decode($food['file']);
+					$csv_output .= $file_info->file_name . ',' . $file_info->file_path . ',';
+				}else{
+					$csv_output .= 'NA,NA,'; 
+				}
+				
 				$csv_output .= str_replace(array("\r", "\r\n", "\n", ","), "-",$food['lws']).',';
 				$csv_output .= str_replace(array("\r", "\r\n", "\n", ","), "-",$food['details']).',';
 				
@@ -678,7 +688,7 @@ class Csv extends CI_Controller {
 		  
 		#$header = "id,Band Name,Music Type,Contact Name,Phone,Alt Phone,Email,Track1,Track2,Receive Email,Live Work Study,Band Member Name,Role,Suburb Live Work Study,Mailing Address,Place Of Work/Study,Band Details,Band Website,Band Online,Willing To Play,Equipment,Previous,Push Stage,Fee Exempt,Payment Method,Contact Email,Billing Name,Billing Address,Payment Number\r\n"; 
 		
-		$header = "id,Band Name,Music Type,Contact Name,Phone,Alt Phone,Email,Track1,Track2,Mp3 Name,Mp3 Link,Receive Email,Live Work Study,Band Member Name,Role,Suburb Live Work Study,Mailing Address,Place Of Work/Study,Band Details,Band Website,Facebook,Youtube,Twitter, Other Weblinks, Short Bio, Long Bio,Willing To Play,Equipment,Previous,Push Stage,Fee Exempt,Payment Method,Contact Email,Billing Name,Billing Address,Payment Number\r\n"; 
+		$header = "id,Band Name,Music Type,Contact Name,Phone,Alt Phone,Email,Track1,Track2,File Name,File Link,Receive Email,Live Work Study,Band Member Name,Role,Suburb Live Work Study,Mailing Address,Place Of Work/Study,Band Details,Band Website,Facebook,Youtube,Twitter, Other Weblinks, Short Bio, Long Bio,Willing To Play,Equipment,Previous,Push Stage,Fee Exempt,Payment Method,Contact Email,Billing Name,Billing Address,Payment Number\r\n"; 
 		 
 		$csv_output = '';
 
@@ -696,11 +706,11 @@ class Csv extends CI_Controller {
 				$csv_output .= str_replace(array("\r", "\r\n", "\n", ","), "-",$food['track1']).',';
 				$csv_output .= str_replace(array("\r", "\r\n", "\n", ","), "-",$food['track2']).',';
 				
-				# mp3
-				if($food['mp3']){
-					$mp3_info = '';
-					$mp3_info = json_decode($food['mp3']);
-					$csv_output .= $mp3_info->file_name . ',' . $mp3_info->file_path . ',';
+				# file
+				if($food['file']){
+					$file_info = '';
+					$file_info = json_decode($food['file']);
+					$csv_output .= $file_info->file_name . ',' . $file_info->file_path . ',';
 				}else{
 					$csv_output .= 'NA,NA,'; 
 				}	

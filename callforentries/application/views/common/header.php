@@ -6,7 +6,7 @@
 <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="<?=base_url()?>css/reset.css" />
 <link rel="stylesheet" href="<?=base_url()?>css/layout.css" />
-
+<link rel="stylesheet" href="<?=base_url()?>assets/font-awesome/4.3.0/css/font-awesome.min.css">
 <!--[if IE 7]>
 <link rel='stylesheet' type='text/css' href='<?=base_url()?>css/layout_ie7.css' />
 <![endif]-->
@@ -146,11 +146,11 @@ $(function(){
                 <div id="countdown_timer" style="margin-left:20px; margin-top:20px; float:left; width:240px;">
                 	
                     <!--<img alt="ct" src="<?=base_url()?>images/countdown-clock.png"/>-->
-                    <div id="timer_st1" style="height: 40px; background: #26ecd1; line-height: 40px; color: 197365; text-align: center; font-size: 18px;">
-                    	000 <span style="color: #fff;">D&nbsp;</span> 00 <span style="color: #fff;">H&nbsp;</span> 00 <span style="color: #fff;">M&nbsp;</span> 00 <span style="color: #fff;">S</span>
+                    <div id="timer_st1" class="festival-countdown">
+                    	000 <span>D&nbsp;</span> 00 <span>H&nbsp;</span> 00 <span>M&nbsp;</span> 00 <span>S</span>
                     </div>
                     <div style="height: 8px">&nbsp;</div>
-                    <div style="height: 36px; background: #f0f0eb; color: #000000; font-size: 12px; font-weight: 600; line-height: 36px; text-align: center;">UNTIL THE ST KILDA FESTIVAL STARTS</div>
+                    <div style="height: 36px; color: #000000; font-size: 12px; font-weight: 600; line-height: 36px; text-align: center;" class="body-bg">UNTIL THE ST KILDA FESTIVAL STARTS</div>
 					
                     
                         <!-- <script type="text/javascript">
@@ -198,13 +198,19 @@ $(function(){
                 </div>
                 <div id="subscribe" style="float:right; margin-right:20px; margin-top:20px">
                     <div id="header_subscribe">
-                        <a style="color:#00E9C9; display:block" href="<?=base_url()?>page/subscribe">SUBSCRIBE</a>
+                        <a class="app-btn block" href="<?=base_url()?>page/subscribe">SUBSCRIBE</a>
                     </div>
                     <div style="margin-top:10px">
-                        <div style="float:left; margin-right:32px"><a target="_blank" href="http://www.facebook.com/StKildaFestival"><img alt="fb" src="<?=base_url()?>images/fb-icon.png"/></a></div>
+                    	<?php if(0){ ?>
+                        <!--<div style="float:left; margin-right:32px"><a target="_blank" href="http://www.facebook.com/StKildaFestival"><img alt="fb" src="<?=base_url()?>images/fb-icon.png"/></a></div>
                         <div style="float:left; margin-right:32px"><a target="_blank" href="https://twitter.com/stkildafestival"><img alt="tw" src="<?=base_url()?>images/tw-icon.png"/></a></div>
                         <div style="float:left; margin-right:32px"><a target="_blank" href="https://instagram.com/stkildafestival"><img alt="yt" src="<?=base_url()?>images/instagram-icon.jpg"/></a></div>
-                        <div style="float:left"><a href="mailto:stkildafestival@portphillip.vic.gov.au"><img alt="em" src="<?=base_url()?>images/em-icon.png"/></a></div>
+                        <div style="float:left"><a href="mailto:stkildafestival@portphillip.vic.gov.au"><img alt="em" src="<?=base_url()?>images/em-icon.png"/></a></div>--> <?php } ?>
+                        <div style="float:left; margin-right:32px"><a class="social-icon" target="_blank" href="http://www.facebook.com/StKildaFestival"><i class="fa fa-facebook"></i></a></div>
+                        <div style="float:left; margin-right:32px"><a class="social-icon" target="_blank" href="https://twitter.com/stkildafestival"><i class="fa fa-twitter"></i></a></div>
+                        <div style="float:left; margin-right:32px"><a class="social-icon" target="_blank" href="https://instagram.com/stkildafestival"><i class="fa fa-instagram"></i></a></div>
+                        <div style="float:left"><a class="social-icon" href="mailto:stkildafestival@portphillip.vic.gov.au"><i class="fa fa-envelope"></i></a></div>
+
                     </div>
                 </div>
               </div>

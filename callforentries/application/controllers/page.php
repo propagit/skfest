@@ -59,7 +59,7 @@ class Page extends CI_Controller
 	}
 	function add_musicians_entry()
 	{
-		#print_r($_FILES['mp3']['name']);exit;
+		#print_r($_FILES);exit;
 		
 		$data = array();
 		foreach($_POST as $key => $value)
@@ -81,11 +81,11 @@ class Page extends CI_Controller
 			
 			# check for file and add
 			
-			# check if an image has been uploaded
+			# check if a file has been uploaded
 			if($_FILES['mp3']['name']){
 				$file_data = array(
 					'dir' => './uploads/mp3/',
-					'allowed_types' => 'mp3|MP3',
+					'allowed_types' => 'mp3',
 					'max_size' => 5120,
 					'field_name' => 'mp3'
 				);
@@ -93,7 +93,7 @@ class Page extends CI_Controller
 				$file_name = $this->_add_file($file_data);
 				if($file_name){
 					$update_data = array();
-					$update_data['mp3'] = json_encode(
+					$update_data['file'] = json_encode(
 											array(
 											'file_name' => $file_name,
 											'file_path' => base_url() . 'uploads/mp3/' . $file_name
@@ -546,8 +546,36 @@ Yalukit_before: ".$yakulit_bfr."<br/>";
 		$data['lws'] = $live;
 		$data['details'] = $detail;
 		
-		$this->User_model->add_send_your_design($data);
+		$id = $this->User_model->add_send_your_design($data);
 		
+		if($id){
+			
+			# check if an image has been uploaded
+			if($_FILES['poster']['name']){
+				$file_data = array(
+					'dir' => './uploads/poster/',
+					'allowed_types' => 'jpg|jpeg|png|gif',
+					'max_size' => 5120,
+					'field_name' => 'poster'
+				);
+				
+				$file_name = $this->_add_file($file_data);
+				if($file_name){
+					$update_data = array();
+					$update_data['file'] = json_encode(
+											array(
+											'file_name' => $file_name,
+											'file_path' => base_url() . 'uploads/poster/' . $file_name
+											)
+										);
+					$this->User_model->update_design_competition($id,$update_data);	
+				}
+	
+			}	
+			
+		}
+		
+		#update_design_competition
 		$this->session->set_flashdata('success', 'Thank you, you have been successfully subcribed');
 		
 		redirect(base_url().'page/send_your_art');
@@ -922,6 +950,29 @@ Membership Type: ".$cate."<br/>";
         {
             $data['page']="";
         }
+		
+		
+		$images = $this->Gallery_model->get_photos($page['gallery']);
+        $width = 0;
+        
+        $path =  base_url()."uploads/galleries/".md5("cdkgallery".$page['gallery'])."/";
+        foreach($images as $i)
+        {
+			if($i['video'] == 0)
+			{
+            	list($w) = getimagesize($path.$i['name']);
+            	$width = $width + $w + 10;
+			}
+			else
+			{
+				$width = $width + 926 + 10;
+			}
+        }
+        $width = $width + 270;
+        $data['images'] = $images;
+        $data['width'] = $width;
+		$data['path'] = $path;
+		
 		/*
         $images = $this->Gallery_model->get_photos($pages['gallery']);
         $width = 0;

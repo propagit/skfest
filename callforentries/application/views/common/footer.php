@@ -29,29 +29,34 @@ $(document).ready(function() {
                 City of Port Phillip ASSIST<br>
                 T: (03) 9209 6777<br>
             </li>
-            <li>
-                <strong>SPONSORSHIP ENQUIRIES</strong><br>
-                Meagan Scott<br>
-                E: <a href="mailto:mscott@portphillip.vic.gov.au">mscott@portphillip.vic.gov.au</a><br>
-                T: 0403 844 266 <br><br>
-                
-                Brad Elliott<br>
-                E: <a href="mailto:belliott@portphillip.vic.gov.au">belliott@portphillip.vic.gov.au</a><br>
-                T: 0478 487 719	<br>
-            </li>
+            
             <li>
                 <strong>MEDIA ENQUIRIES</strong><br>
                 Wrights PR<br>
                 T: (03) 9690 9911<br>
                 E: <a href="mailto:sfarnum@wrights.com.au">sfarnum@wrights.com.au</a><br>
-                W: wrights.com.au<br>
+                W: <a target="_blank" href="http://wrights.com.au">wrights.com.au</a><br>
+            </li>
+            <li>
+                <strong>SPONSORSHIP ENQUIRIES</strong><br>
+                Meagan Scott<br>
+                E: <a href="mailto:mscott@portphillip.vic.gov.au">mscott@portphillip.vic.gov.au</a><br>
+                T: 0403 844 266 <br><br>
+                <?php if(0){ ?>
+                Brad Elliott<br>
+                E: <a href="mailto:belliott@portphillip.vic.gov.au">belliott@portphillip.vic.gov.au</a><br>
+                T: 0478 487 719	<br><?php } ?>
             </li>
         </ul>
     </div>
-    <div id="advertisment">
+    <?php if(0){ 
+		# reason for keeping this as a comment is they might want it back again later on
+	?>
+    <!--<div id="advertisment">
         <div><a href="http://www.stkildafilmfestival.com.au/callforentries/" target="_blank"><img src="<?=base_url()?>images/FooterAd-240x140-FILMFESTIVAL.jpg" /></a></div>
         <div><a href="http://www.portphillip.vic.gov.au/no_cuts_no_butts.htm" target="_blank"><img src="<?=base_url()?>images/FooterAd-240x140-NOCUTSNOBUTTS.jpg" /></a></div>
-    </div>
+    </div>-->
+    <?php } ?>
  </div>
 </div> 	
 </div> 
