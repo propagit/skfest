@@ -91,20 +91,20 @@
                         <div>
                         	<div style="float:left">&nbsp;</div>
                         	<div class="form_label_checkbox">
-                            	Submit your design via email or by regular post:<br><br>
+                            	Submit your design via this entry form, email or regular post:<br><br>
                                 
                                 <ul>
                                 <li>
                                   <strong>EMAIL SUBMISSIONS</strong> must be sent to <strong><a href="mailto:stkildafestival@portphillip.vic.gov.au?subject=POSTER DESIGN COMPETITION">stkildafestival@portphillip.vic.gov.au</a></strong> with 'POSTER DESIGN COMPETITION' in the subject line. Please include your name, address and phone number in the body of the email.<br><br>
                                 <li>
                                 <li>
-                                  <strong>POSTAL SUBMISSIONS</strong> must be sent on CD to:<br>
+                                  <strong>POSTAL SUBMISSIONS</strong> must be sent on USB or CD to:<br>
                                   St Kilda Festival,<br> 
                                   City of Port Phillip, <br>
                                   Private Bag 3,<br> 
                                   PO St Kilda, VIC 3182,<br> 
                                   ATTN: St Kilda Festival Poster Design Competition.<br><br> 
-                                  Each CD must be clearly labelled with your name and phone number.<br><br>
+                                  Each USB/CD must be clearly labelled with your name and phone number. USB/CD’s will not be returned.<br><br>
                                 </li>
                                 <ul>
                                 
